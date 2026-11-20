@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial,sans-serif;
+    direction: rtl;
+}
+.background{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("الخلفيات/bady2.JPG") ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40px;
+    position: relative;
+}
+.content{
+    background-color: rgba(255,245 ,248 ,0.90 );
+    width: 420px;
+    max-width: 100%;
+    padding: 35px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+.content h1{
+    color: #b51650;
+    font-size: 32px;
+    margin-bottom: 20px;
+
+}
+.content p{
+     color: #b51650;
+     font-size: 18px;
+     line-height: 1.8;
+     margin-bottom: 25px;
+}
+.products-button{
+    display: inline-block;
+    background: linear-gradient(135deg,#d82c68,#a20e43);
+    color: white;
+    padding: 15px 45px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3;
+}
+.products-button:hover{
+    background: #850b36;
+    transform: translateY(-3px);
+}
+@media(max-width:600px){
+    .background{
+        padding: 20px;
+        justify-content: center;
+        background-position: center;
+    }
+    .content{
+        width: 100%;
+        padding: 25px;
+
+    }
+    .content h1{
+        font-size: 26px;
+    }
+    .content p{
+        font-size: 16px;
+    }
+}
